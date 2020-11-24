@@ -1,0 +1,139 @@
+Pestaña INICIO
+Es la página índice, aquí estará una landing page de LATAM RIVALS, un video de fondo y logo encima, abajo unas pocas Novedades
+acerca de las noticias recientes de la página como torneos, ganadores, comunicados, etc. posteriormente los últimos videos
+subidos y una imagen explicando lo que somos, y finalmente el pie de página.
+
+Pestaña EQUIPOS
+Aquí estarán todos los equipos registrados con el nombre y logo que los representa, la puntuación que han tenido, su winrate y
+si han ganado torneos anteriormente, dando clic obtendrás más inforamación como sus miembros, ligas y cuántos MVP 
+han sacado algunos jugadores
+
+Pestaña TORNEOS 
+Es una pestaña desplegable para información de torneos, está subdividido por:
+    
+    Pestaña ESTADISTICAS
+    Aquí se muestran los campeones jugados y sus winrate, divididos por torneos
+    
+    Pestaña HISTORIAL 
+    Aquí se muestran las partidas jugadas de los equipos, los campeones, runas con la que jugaron, y principalmente
+    el video jugando dicha partida
+    
+    Pestaña POSICIONES
+    Si hay un torneo activo, se muestra el formato de cómo van los equipos en posicionamiento, si está en fase de grupo
+    o si está en bracket
+
+Pestaña NOVEDADES 
+Aquí se muestra las noticias que vayamos publicando, desde nuevos torneos, novedades que hayamos implementado, actualizaciones
+del torneo, ganadores, etc.
+
+Pestaña CALENDARIO
+El calendario de los días que se llevará a cabo un torneo en específico, si no hay torneos, se mostrará una fecha de 
+posible inscripción a un próximo torneo (fecha que puede cambiar en cualquier momento)
+
+<header class="header">
+            <div class="header__logos">
+                <div class="header__logo">
+                    <img class="header__img" src="images/LATAM_blanco_logo.png" alt="Logo Latam Rivals">
+                </div>
+            </div>
+            <ul class="main-menu">
+                <li class="main-menu__item"><a class="main-menu__link" href="">Inicio</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="">Equipos</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="">Torneos</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="">Novedades</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="">Calendario</a></li>
+            </ul>
+            <ul class="menu-right">
+                <li class="menu-right__item"><a href="" class="menu-right__link">INICIA SESIÓN</a></li>
+            </ul>
+        </header>
+
+        /*Todo el contenido del header*/
+.header {
+    background-color: #040a14;
+    display: flex;
+    height: 86px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*Contenido de la parte izquierda del menú*/
+.main-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header__logos {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*El div contenedor de la imagen del header*/
+.header__logo {
+    width: 85px;
+    margin-left: 20px;
+}
+
+.header__logo-2 {
+    width: 150px;
+}
+
+/*El elemento img del header*/
+.header__img,
+.header__img-2 {
+    display: block;
+    max-width: 100%;
+}
+
+/*Elementos li del menú*/
+.main-menu__item {
+    list-style: none;
+}
+
+.main-menu__item:hover {
+    border-right: 3px solid #eff3f7;
+}
+
+.main-menu__item:hover > .main-menu__link{
+    padding-left: 23.5px;
+    padding-right: 23.5px;
+}
+
+.main-menu__link {
+    color: #eff3f7;
+    text-decoration: none;
+    /*font-family: sans-serif;*/
+    font-size: 1.3em;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*#########################*/
+.menu-right {
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.menu-right__item {
+    list-style: none;
+}
+
+.menu-right__link {
+    background-color: #d411a9;
+    color: #eff3f7;
+    text-decoration: none;
+    font-family: "LM-Light";
+    font-size: 0.8em;
+    padding: 10px 15px;
+    border-radius: 2px;
+}
+
+.menu-right__link:hover {
+    /*background-color: #9229b3;*/
+    background-color: #e340bf;
+}
