@@ -1,4 +1,101 @@
 .header {
-    padding: 1em 0;
-    background-color: royalblue;
+    background-color: $background-color;
+    font-family: sans-serif;
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: block;
+    max-width: 64px;
+    margin-left: 20px;
+}
+
+.nav {
+    margin-right: 20px;
+    font-family: $nav-font;
+    font-size: $font-size-medium;
+}
+
+.header-right {
+    margin-right: 20px;
+}
+
+.btn-login {
+    background-color: $cta-color;
+    color: $primary-color;
+    line-height: 16px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    padding: 12px 0;
+    border-radius: 2px;
+}
+
+.btn-login:hover {
+    background-color: red;
+}
+
+/*ESTILOS GENERALES NAV*/
+.nav__list,
+.subnav__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav__item,
+.subnav__item {
+    line-height: 3rem;
+    position: relative;
+}
+
+.nav__link,
+.subnav__link {
+    background-color: $background-color;
+    text-decoration: none;
+    color: $primary-color;
+    display: block;
+}
+
+.nav__link:hover,
+.subnav__link:hover {
+    background-color: $dark-color-2;
+}
+/*ESTILOS PRIMER NIVEL*/
+
+.nav__list {
+    background-color: $background-color;
+    display: inline-block;
+}
+
+.nav__item {
+    float: left;
+}
+
+.nav__item:hover .subnav__list{
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav__link {
+    padding: 0 2.5em;
+}
+
+/*ESTILOS SEGUNDO NIVEL*/
+
+.subnav__list {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.subnav__link {
+    padding: 0 2em;
 }

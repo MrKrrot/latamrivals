@@ -1,14 +1,15 @@
+/* CONFIG -- Archivos de configuración, variables, colores, fuentes */
+@import 'config/colors';
+@import 'config/fonts';
+/* MIXINS -- Funciones, funciones para breakpoints*/
+@import 'mixins/breakpoints';
 /* BASE -- Estilos que se usarán globalmente o para todos los elementos de un tipo */
 @import 'base/normalize';
 @import 'base/base';
 
 /* BLOQUES -- Estilos que vamos a repetir a menudo en una página, header, buttons, footer */
 @import 'blocks/header';
-
-/* CONFIG -- Archivos de configuración, variables, colores, fuentes */
-
-/* HELPERS -- Archivos de ayuda, funciones o configuraciones de css que se reutiliza*/
-
-/* MIXINS -- Funciones, funciones para breakpoints*/
+@import 'blocks/main';
+@import 'blocks/footer';
 
 /* PAGES -- Archivos HTML que requieren una configuración especial y no se repite en otras*/
