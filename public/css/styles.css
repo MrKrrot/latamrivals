@@ -213,17 +213,15 @@ body { background-color: var(--dark-color-2); color: var(--danger-color); }
     width: 100%;
     background-color: #171717;
     background-size: cover;
-    background-position: center;
-    position: absolute;
+
 }
 .form-box{
     width: 380px;
     height: 480px;
     position: relative;
-    margin: 6% auto;
+    margin: 30px auto;
     background: #fff;
     padding: 5px;
-    align-items: center;
     font-family: "News Cycle", sans-serif; 
     font-size: 17.5px; 
     font-weight: 800;
@@ -252,7 +250,7 @@ body { background-color: var(--dark-color-2); color: var(--danger-color); }
     position: absolute;
     width: 110px;
     height: 100%;
-    background: linear-gradient(to right, #525252,#9c9c9c );
+    background: linear-gradient(to right, #ff2d2d,#ff8181 );
     border-radius: 30px;
     transition: .5s;
 }
@@ -279,7 +277,7 @@ body { background-color: var(--dark-color-2); color: var(--danger-color); }
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient(to right, #525252,#9c9c9c );
+    background: linear-gradient(to right, #ff2d2d,#ff8181 );
     border: 0;
     outline: none;
     border-radius: 30px;
@@ -296,4 +294,12 @@ body { background-color: var(--dark-color-2); color: var(--danger-color); }
 }
 #register{
     left: 450px;
+}
+.logoform{
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    width: 400px;
+    height: 180px;
+
 }

@@ -7,7 +7,9 @@
     <title>Login & Register</title>
 </head>
 <body>
+    
     <div class= "formlr">
+    <img src="./assets/images/logo/LATAM_blanco.png" class="logoform">
         <div class="form-box">
             <div class="btn-box">
                 <div id="btn"></div>
