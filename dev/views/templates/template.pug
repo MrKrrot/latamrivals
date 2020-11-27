@@ -11,19 +11,27 @@ html(lang="es")
         script(src="https://kit.fontawesome.com/9f65d8e98d.js" crossorigin="anonymous")
     body
         header.header
-            a(href="/")
+            a.header__logo-container(href="/")
                 img.header__logo(src="./assets/images/logo/LATAM_blanco_logo.png", alt="Latam Rivals")
-            nav.nav
+            nav.nav#nav
                 ul.nav__list
+                    li.nav__item
+                        a.nav__link(href='index.html') Inicio
                     for page in pages
                         li.nav__item
                             a.nav__link(href=page+'.html') #{page}
-                            if page == 'Torneos'
+                            if page == 'torneos'
+                                i.fas.fa-caret-down.arrow-icon
                                 ul.subnav__list
                                     for page2 in pages2
                                         li.subnav__item
                                             a.subnav__link(href=page2+'.html') #{page2}
             div.header-right
-                a.btn-login(href="#") INICIAR SESIÓN
+                a.btn-login(href="#") Iniciar sesión
+            .toggle-menu#toggle
+                .first-bar
+                .second-bar
+                .third-bar
         main.main
         footer.footer
+        script(src="js/scripts-min.js")

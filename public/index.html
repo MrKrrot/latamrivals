@@ -10,29 +10,34 @@
     <script src="https://kit.fontawesome.com/9f65d8e98d.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="header"><a href="/"><img class="header__logo" src="./assets/images/logo/LATAM_blanco_logo.png" alt="Latam Rivals"/></a>
-      <nav class="nav">
+    <header class="header"><a class="header__logo-container" href="/"><img class="header__logo" src="./assets/images/logo/LATAM_blanco_logo.png" alt="Latam Rivals"/></a>
+      <nav class="nav" id="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="Inicio.html">Inicio</a>
+          <li class="nav__item"><a class="nav__link" href="index.html">Inicio</a></li>
+          <li class="nav__item"><a class="nav__link" href="equipos.html">equipos</a>
           </li>
-          <li class="nav__item"><a class="nav__link" href="Equipos.html">Equipos</a>
-          </li>
-          <li class="nav__item"><a class="nav__link" href="Torneos.html">Torneos</a>
+          <li class="nav__item"><a class="nav__link" href="torneos.html">torneos</a><i class="fas fa-caret-down arrow-icon"></i>
             <ul class="subnav__list">
-              <li class="subnav__item"><a class="subnav__link" href="Estadisticas.html">Estadisticas</a></li>
-              <li class="subnav__item"><a class="subnav__link" href="Historial.html">Historial</a></li>
-              <li class="subnav__item"><a class="subnav__link" href="Posiciones.html">Posiciones</a></li>
+              <li class="subnav__item"><a class="subnav__link" href="estadisticas.html">estadisticas</a></li>
+              <li class="subnav__item"><a class="subnav__link" href="historial.html">historial</a></li>
+              <li class="subnav__item"><a class="subnav__link" href="posiciones.html">posiciones</a></li>
             </ul>
           </li>
-          <li class="nav__item"><a class="nav__link" href="Novedades.html">Novedades</a>
+          <li class="nav__item"><a class="nav__link" href="novedades.html">novedades</a>
           </li>
-          <li class="nav__item"><a class="nav__link" href="Calendario.html">Calendario</a>
+          <li class="nav__item"><a class="nav__link" href="calendario.html">calendario</a>
           </li>
         </ul>
       </nav>
-      <div class="header-right"><a class="btn-login" href="#">INICIAR SESIÓN</a></div>
+      <div class="header-right"><a class="btn-login" href="#">Iniciar sesión</a></div>
+      <div class="toggle-menu" id="toggle">
+        <div class="first-bar"></div>
+        <div class="second-bar"></div>
+        <div class="third-bar"></div>
+      </div>
     </header>
     <main class="main"></main>
     <footer class="footer"></footer>
+    <script src="js/scripts-min.js"></script>
   </body>
 </html>

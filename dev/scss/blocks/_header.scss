@@ -1,27 +1,32 @@
 .header {
     background-color: $background-color;
+    position: fixed;
     font-family: sans-serif;
     display: flex;
-    width: 100vw;
+    min-width: 100vw;
     height: 80px;
     align-items: center;
     justify-content: space-between;
-}
 
-.header__logo {
-    display: block;
-    max-width: 64px;
-    margin-left: 20px;
-}
+    &__logo-container {
+        order: 1;
+    }
 
-.nav {
-    margin-right: 20px;
-    font-family: $nav-font;
-    font-size: $font-size-medium;
-}
+    &__logo {
+        display: block;
+        max-width: 64px;
+        margin-left: 20px;
+    }
 
-.header-right {
-    margin-right: 20px;
+    &-right {
+        margin-right: 20px;
+        display: none;
+    
+        @include for-laptop {
+            display: block;
+        }
+        order: 2;
+    }
 }
 
 .btn-login {
@@ -30,72 +35,53 @@
     line-height: 16px;
     text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
+    font-family: $login-font, sans-serif;
+    font-size: 13px;
+    font-weight: 800;
     display: inline-block;
     width: 150px;
     padding: 12px 0;
     border-radius: 2px;
+
+    &:hover {
+        background-color: $cta-color-2;
+    }
 }
 
-.btn-login:hover {
-    background-color: red;
-}
+/*TOGGLE MENU*/
 
-/*ESTILOS GENERALES NAV*/
-.nav__list,
-.subnav__list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.nav__item,
-.subnav__item {
-    line-height: 3rem;
+.toggle-menu {
+    height: 40px;
+    width: 40px;
     position: relative;
-}
+    right: 5px;
+    order: 3;
+    cursor: pointer;
 
-.nav__link,
-.subnav__link {
-    background-color: $background-color;
-    text-decoration: none;
-    color: $primary-color;
-    display: block;
-}
+    & .first-bar,
+    & .second-bar,
+    & .third-bar {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #ccc;
+        border-radius: 5px;
+    }
 
-.nav__link:hover,
-.subnav__link:hover {
-    background-color: $dark-color-2;
-}
-/*ESTILOS PRIMER NIVEL*/
+    & .first-bar {
+        top: 7px;
+    }
 
-.nav__list {
-    background-color: $background-color;
-    display: inline-block;
-}
+    & .second-bar {
+        top: 17px;
+    }
 
-.nav__item {
-    float: left;
-}
+    & .third-bar {
+        top: 27px;
+    }
 
-.nav__item:hover .subnav__list{
-    visibility: visible;
-    opacity: 1;
-}
-
-.nav__link {
-    padding: 0 2.5em;
-}
-
-/*ESTILOS SEGUNDO NIVEL*/
-
-.subnav__list {
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s linear;
-}
-
-.subnav__link {
-    padding: 0 2em;
+    @include for-laptop {
+        display: none;
+    }
 }
