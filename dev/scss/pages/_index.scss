@@ -11,12 +11,19 @@
     }
 
     &__logo {
-        width: 210px;
+        width: 240px;
         margin-left: auto;
         margin-right: auto;
         display: block;
         position: relative;
         top: 10px;
+        @include for-tablet {
+            width: 320px;
+        }
+
+        @include for-laptop {
+            width: 380px;
+        }
     }
 
     &-section__title {
@@ -32,7 +39,6 @@
 .team-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 
     &__title {
         color: $danger-color;
@@ -43,7 +49,6 @@
         height: 200px;
         border: 1px solid #000;
         margin-right: 2em;
-        margin-left: 2em;
         margin-bottom: 2rem;
         text-align: center;
     }
@@ -80,7 +85,6 @@
 .news-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 
     &__title {
         color: $danger-color;
@@ -91,7 +95,6 @@
         height: 200px;
         border: 1px solid #000;
         margin-right: 2em;
-        margin-left: 2em;
         margin-bottom: 2rem;
         text-align: center;
     }

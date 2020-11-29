@@ -7,12 +7,21 @@ $login-font: 'News Cycle';
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 $teams-font: 'Oswald';
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap'); 
+$footer-font: 'Open Sans';
+
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('../assets/fonts/BebasNeue-Regular.otf');
+}
+
 @font-face {
     font-family: 'BebasNeue';
     src: url('../assets/fonts/LEMONMILK-Regular.otf');
 }
 
-$font-title: 'BebasNeue';
+$font-title: 'LEMON MILK';
+$font-footer: 'BebasNeue';
 
 $font-size-small: 19px;
 $font-size-medium: 24px;
