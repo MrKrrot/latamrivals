@@ -4,6 +4,16 @@ $nav-font: 'Montserrat';
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap');
 $login-font: 'News Cycle';
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+$teams-font: 'Oswald';
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../assets/fonts/LEMONMILK-Regular.otf');
+}
+
+$font-title: 'BebasNeue';
+
 $font-size-small: 19px;
 $font-size-medium: 24px;
-$font-size-tall: 32px;
+$font-size-large: 32px;

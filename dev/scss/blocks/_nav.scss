@@ -2,7 +2,7 @@
 .nav {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 10px;
     width: 60%;
     font-family: $nav-font;
     font-size: $font-size-small;
@@ -49,6 +49,7 @@
     &__link:hover,
     .subnav__link:hover {
         background-color: $dark-color-2;
+        color: $dark-color;
     }
 
     /*ESTILOS PRIMER NIVEL*/
@@ -110,7 +111,7 @@
 }
 
 .nav__item:hover .arrow-icon {
-    color: $primary-color;
+    color: $dark-color;
     cursor: pointer;
 }
 /*ESTILOS SEGUNDO NIVEL*/
