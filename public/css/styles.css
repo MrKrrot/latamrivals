@@ -205,6 +205,28 @@ body { background-color: var(--dark-color-2); display: flex; flex-direction: col
 
 .main { position: relative; width: 70%; top: 80px; margin-left: auto; margin-right: auto; }
 
+.main-section form { margin-bottom: 20px; }
+
+.main-section legend { font-family: "Open Sans"; }
+
+.main-section label { margin-bottom: 5px; }
+
+.main-section .form-group { display: flex; flex-direction: column; font-family: "Oswald"; text-transform: uppercase; font-weight: 700; }
+
+@media screen and (min-width: 768px) { .main-section .form-group:nth-child(2) { float: left; width: 49%; margin-right: 1%; } }
+
+.main-section .required { color: var(--danger-color); font-size: 20px; position: relative; margin-left: 2px; }
+
+.main-section input { margin-top: 5px; width: 98%; height: 25px; border: 1px solid var(--secondary-color); border-radius: 2px; }
+
+.main-section textarea { height: 190px; resize: vertical; }
+
+@media screen and (min-width: 1400px) { .main-section textarea { height: 300px; } }
+
+.main-section input[type=submit] { width: 100%; height: 40px; background-color: var(--danger-color); font-family: "News Cycle"; font-size: 20px; color: var(--dark-color-2); }
+
+.main-section input[type=submit]:hover { color: var(--dark-color); cursor: pointer; }
+
 .footer { position: relative; background-color: var(--dark-color); top: 80px; margin-top: auto; border-top: 3px solid #333; }
 
 .footer__list { height: 80px; margin-top: 0; margin-bottom: 0; padding-left: 0; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; }
