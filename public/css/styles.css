@@ -248,7 +248,7 @@ body { background-color: var(--dark-color-2); color: var(--danger-color); }
     top: 0;
     left: 0;
     position: absolute;
-    width: 110px;
+    width: 130px;
     height: 100%;
     background: linear-gradient(to right, #ff2d2d,#ff8181 );
     border-radius: 30px;
