@@ -7,7 +7,7 @@ html(lang="es")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         link(rel="stylesheet", href="css/styles.css")
         link(rel="shortcut icon", href="./assets/images/favicon.ico", type="image/x-icon")
-        title Latam Rivals
+        block title
         script(src="https://kit.fontawesome.com/9f65d8e98d.js" crossorigin="anonymous")
     body
         header.header
@@ -38,22 +38,20 @@ html(lang="es")
             .footer__links
                 ul.footer__list
                     li.footer__list-item
-                        a.footer__list-link(href="#") Ayúdanos a mejorar
+                        a.footer__list-link(href="help-us.html") Ayúdanos a mejorar
                     li.footer__list-item
-                        a.footer__list-link(href="#") Acerca de
+                        a.footer__list-link(href="about.html") Acerca de
                     li.footer__list-item
-                        a.footer__list-link(href="#") FAQ
+                        a.footer__list-link(href="faq.html") FAQ
             .footer__logo
                 img(src="./assets/images/logo/LATAM_blanco.png", alt="Logo Latam Rivals")
             .footer__social
-                a.footer__social-link(href="#")
+                a.footer__social-link(href="https://www.twitch.tv/latamrivals", target="_blank", rel="noopener noreferrer")
                     i.fab.fa-twitch
-                a.footer__social-link(href="#")        
+                a.footer__social-link(href="https://discord.gg/cZr33wYQDx", target="_blank", rel="noopener noreferrer")        
                     i.fab.fa-discord
-                a.footer__social-link(href="#")        
+                a.footer__social-link(href="https://twitter.com/LatamRivals", target="_blank", rel="noopener noreferrer")        
                     i.fab.fa-twitter-square
-                a.footer__social-link(href="#")        
-                    i.fab.fa-instagram
             .footer__copy
                 span &copy; Latam Rivals Inc. Todos los derechos reservados.
             
