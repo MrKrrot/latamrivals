@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon"/>
-    <title>Latam Rivals</title>
+    <title>Ayúdanos | Latam Rivals</title>
     <script src="https://kit.fontawesome.com/9f65d8e98d.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -29,45 +29,40 @@
           </li>
         </ul>
       </nav>
-      <div class="header-right"><a class="btn-login" href="login.php">Iniciar sesión</a></div>
+      <div class="header-right"><a class="btn-login" href="#">Iniciar sesión</a></div>
       <div class="toggle-menu" id="toggle">
         <div class="first-bar"></div>
         <div class="second-bar"></div>
         <div class="third-bar"></div>
       </div>
     </header>
-    <main class="main"><img class="main__logo" src="./assets/images/logo/LATAM_negro.png" alt="Latam Rivals Logo"/>
-      <h1 class="main-section__title">¿Qué es Latam Rivals?</h1>
+    <main class="main">
+      <h1 class="main-section__title">Sugerencias</h1>
       <section class="main-section">
-        <p class="main-section__paragraph">¡BIENVENIDO A LA GRIETA DEL INVOCADOR! Somos entusiastas de League of Legends que quieren brindar diversion y competitividad a la comunidad, dentro de nuestros planes esta crear una plataforma donde personas puedan disfrutar y demostrar su valia contra otros jugadores dentro de la grieta.</p>
-      </section>
-      <h2 class="team-section__title">Equipos</h2>
-      <section class="team-section">
-        <div class="team-section__teams"><a class="team-section__link" href="#"><img class="team-section__logo" src="/assets/images/teams/team_zhe.png" alt="Zanahorias Estelares [ZHE]"/>
-            <div class="team-section__name">Zanahorias Estelares</div></a></div>
-        <div class="team-section__teams"><a class="team-section__link" href="#"><img class="team-section__logo" src="/assets/images/teams/team_inf.png" alt="Infinity Esports [INF]"/>
-            <div class="team-section__name">Infinity Esports</div></a></div>
-        <div class="team-section__teams"><a class="team-section__link" href="#"><img class="team-section__logo" src="/assets/images/teams/team_ldm.png" alt="Liga del Mal [LDM]"/>
-            <div class="team-section__name">Liga del Mal</div></a></div>
-        <div class="team-section__teams"><a class="team-section__link" href="#"><img class="team-section__logo" src="/assets/images/teams/team_tek.png" alt="TEK Gaming [TEK]"/>
-            <div class="team-section__name">TEK Gaming</div></a></div>
-      </section>
-      <h2 class="news-section__title">Novedades</h2>
-      <section class="news-section">
-        <div class="news-section__news"><a class="news-section__link" href=""><img class="news-section__img" src="/assets/images/news/news_default.png" alt="Noticia 1"/>
-            <div class="news-section__name">Noticia 1</div></a></div>
-        <div class="news-section__news"><a class="news-section__link" href=""><img class="news-section__img" src="/assets/images/news/news_default.png" alt="Noticia 2"/>
-            <div class="news-section__name">Noticia 2</div></a></div>
-        <div class="news-section__news"><a class="news-section__link" href=""><img class="news-section__img" src="/assets/images/news/news_default.png" alt="Noticia 3"/>
-            <div class="news-section__name">Noticia 3</div></a></div>
-        <div class="news-section__news"><a class="news-section__link" href=""><img class="news-section__img" src="/assets/images/news/news_default.png" alt="Noticia 4"/>
-            <div class="news-section__name">Noticia 4</div></a></div>
+        <form action="suggest.php" method="post">
+          <fieldset>
+            <legend>Deja tu comentario</legend>
+            <div class="form-group">
+              <label for="name">Nombre<span class="required">*</span></label>
+              <input type="text" name="name" id="name" required="required"/>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail<span class="required">*</span></label>
+              <input type="email" name="email" id="email" required="required"/>
+            </div>
+            <div class="form-group">
+              <label for="comment">Mensaje<span class="required">*</span></label>
+              <textarea name="comment" id="comment" cols="30" rows="10" required="required"></textarea>
+            </div>
+            <input type="submit"/>
+          </fieldset>
+        </form>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__links">
         <ul class="footer__list">
-          <li class="footer__list-item"><a class="footer__list-link" href="help-us.php">Ayúdanos a mejorar</a></li>
+          <li class="footer__list-item"><a class="footer__list-link" href="help-us.html">Ayúdanos a mejorar</a></li>
           <li class="footer__list-item"><a class="footer__list-link" href="about.html">Acerca de</a></li>
           <li class="footer__list-item"><a class="footer__list-link" href="faq.html">FAQ</a></li>
         </ul>

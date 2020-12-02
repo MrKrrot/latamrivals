@@ -1,16 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <title>Login & Register</title>
 </head>
-<body>
+<body class="body">
     
     <div class= "formlr">
-    <img src="./assets/images/logo/LATAM_blanco.png" class="logoform">
+        <a href="index.html">
+            <img src="./assets/images/logo/LATAM_blanco.png" class="logoform">
+        </a>
         <div class="form-box">
             <div class="btn-box">
                 <div id="btn"></div>
@@ -32,21 +35,6 @@
             </form>
         </div>
     </div>
-    <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("register");
-        var z = document.getElementById("btn");
-
-        function register(){
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "110px";
-        }
-        function login(){
-            x.style.left = "50px";
-            y.style.left = "450px";
-            z.style.left = "0";
-        }
-    </script>
+    <script src="js/form.js"></script>
 </body>
 </html>
