@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon"/>
-    <title>FAQ | Latam Rivals</title>
+    <title>Ayúdanos | Latam Rivals</title>
     <script src="https://kit.fontawesome.com/9f65d8e98d.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -37,15 +37,32 @@
       </div>
     </header>
     <main class="main">
-      <h1 class="main-section__title">FAQ - Preguntas frecuentes</h1>
+      <h1 class="main-section__title">Sugerencias</h1>
       <section class="main-section">
-        <p class="main-section__paragraph">No hay preguntas frecuentes de momento. ¡Dejanos tus comentarios!</p>
+        <form action="suggest.php" method="post">
+          <fieldset>
+            <legend>Deja tu comentario</legend>
+            <div class="form-group">
+              <label for="name">Nombre<span class="required">*</span></label>
+              <input type="text" name="name" id="name" required="required"/>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail<span class="required">*</span></label>
+              <input type="email" name="email" id="email" required="required"/>
+            </div>
+            <div class="form-group">
+              <label for="comment">Mensaje<span class="required">*</span></label>
+              <textarea name="comment" id="comment" cols="30" rows="10" required="required"></textarea>
+            </div>
+            <input type="submit"/>
+          </fieldset>
+        </form>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__links">
         <ul class="footer__list">
-          <li class="footer__list-item"><a class="footer__list-link" href="help-us.php">Ayúdanos a mejorar</a></li>
+          <li class="footer__list-item"><a class="footer__list-link" href="help-us.html">Ayúdanos a mejorar</a></li>
           <li class="footer__list-item"><a class="footer__list-link" href="about.html">Acerca de</a></li>
           <li class="footer__list-item"><a class="footer__list-link" href="faq.html">FAQ</a></li>
         </ul>
